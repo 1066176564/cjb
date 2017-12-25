@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+function IsPC(){    
+     var userAgentInfo = navigator.userAgent;  
+     var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");    
+     var flag = true;    
+     for (var v = 0; v < Agents.length; v++) {    
+         if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }    
+     }    
+     return flag;    
+  }
+IsPC();
+if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  
+    //alert(navigator.userAgent);    
+//  window.location.href ="iPhone.html"; 
+console.log("苹果")
+} else if (/(Android)/i.test(navigator.userAgent)) {  
+    //alert(navigator.userAgent);   
+//  window.location.href ="Android.html";  4
+console.log("安卓")
+} else {  
+//  window.location.href ="pc.html";  
+console.log("pc")
+};  
+</script>
